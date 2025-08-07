@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(6, 82, 6);
+  width: 300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  background-color: #ccc;
+  width: 300px;
+  min-height: 300px;
+  margin: 100px;
+  padding: 10px;
+}
+
+.section__title {
+  color: black;
+}
+.section__title:hover {
+  color: aquamarine;
+}
+.section__title--red {
+  color: red;
+}
+
+.section__text {
+  color: green;
+}
+.section__text:hover {
+  color: greenyellow;
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: tomato;
+  padding: 20px;
+}
+
+.button {
+  color: wheat;
+  background-color: blueviolet;
+}
+.button:hover, .button:focus {
+  color: #353754;
+}
+.box:hover .button {
+  color: #353754;
+  background-color: wheat;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+body {
+    background-color: $color;
+    width: $container-width;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+// конкатенація - &-амперсант
+// .section {
+//     background-color: #ccc;
+//     width: $container-width;
+//     height: $container-height;
+//     margin-left: 50px;
+
+//     &__title {
+//         color: tomato;
+//         outline: 1px solid black;
+
+//         // модифікатаор
+//          &--black {
+//             color: black;
+//         }
+//     }
+
+//     &__text {
+//         color: green;
+//         background-color: #ccc;
+//     }
+// }
+
+// не робити багато вкладеності !!!
+.section {
+    background-color:#ccc;
+    width: $container-width;
+    min-height: 300px;
+
+    margin: 100px;
+    padding: 10px;
+}
+
+.section__title {
+    color: black;
+
+    &:hover {
+        color: aquamarine;
+    }
+
+    &--red {
+        color: red;
+    }
+}
+
+.section__text {
+    color: green;
+
+    &:hover {
+        color: greenyellow;
+    }
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: tomato;
+    padding: 20px;
+}
+
+.button {
+    color: wheat;
+    background-color: blueviolet;
+
+    &:hover, &:focus {
+        color: #353754;
+    }
+
+    // box:hover .button
+    .box:hover & {
+        color: #353754;
+        background-color: wheat;
+    }
+}
